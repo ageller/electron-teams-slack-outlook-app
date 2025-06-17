@@ -1,0 +1,15 @@
+{
+    "name": "electron-teams-slack-outlook-app",
+    "version": "1.0.0",
+    "description": "Testing a basic electron app that will display the web clients for Teams, Slack and Outlook",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^36.4.0"
+    }
+}
