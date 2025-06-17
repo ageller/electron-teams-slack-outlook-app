@@ -3,12 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <title>CommsHub</title>
-        <link rel="stylesheet" href="styles.css">
-
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <webview src="https://outlook.office.com/mail/" partition="persist:outlook" allowpopups></webview>
-        <webview src="https://app.slack.com/client" partition="persist:slack" allowpopups></webview>
-        <webview src="https://teams.microsoft.com" partition="persist:teams" allowpopups></webview>
+        <div id="sidebar">
+            <button onclick="toggleView('outlook')" class="shown"><img width="40px" src="icons/outlook.png"></button>
+            <button onclick="toggleView('slack')" class="shown"><img width="40px" src="icons/slack.png"></button>
+            <button onclick="toggleView('teams')" class="shown"><img width="40px" src="icons/teams.png"></button>
+        </div>
+        <div id="panels">
+            <webview src="https://outlook.office.com/mail/" id="outlook" class="panel" partition="persist:outlook" allowpopups></webview>
+            <webview src="https://app.slack.com/client" id="slack" class="panel" partition="persist:slack" allowpopups></webview>
+            <webview src="https://teams.microsoft.com" id="teams" class="panel" partition="persist:teams" allowpopups></webview>
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>  
+
     </body>
 </html>
