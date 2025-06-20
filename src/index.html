@@ -7,9 +7,9 @@
     </head>
     <body>
         <div id="sidebar">
-            <button onclick="toggleView('outlook')" class="shown"><img width="40px" src="icons/outlook.png"></button>
-            <button onclick="toggleView('slack')" class="shown"><img width="40px" src="icons/slack.png"></button>
-            <button onclick="toggleView('teams')" class="shown"><img width="40px" src="icons/teams.png"></button>
+            <button onclick="toggleView(this, 'outlook')" class="shown"><img width="40px" src="icons/outlook.png"></button>
+            <button onclick="toggleView(this, 'slack')" class="shown"><img width="40px" src="icons/slack.png"></button>
+            <button onclick="toggleView(this, 'teams')" class="shown"><img width="40px" src="icons/teams.png"></button>
         </div>
         <div id="panels">
             <webview src="https://outlook.office.com/mail/" id="outlook" class="panel" partition="persist:outlook" allowpopups></webview>
